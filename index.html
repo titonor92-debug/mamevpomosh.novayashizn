@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мамина Помощница - Уход за новорождёнными</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-baby"></i>
+                <span>Мамина Помощница</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="#feeding" class="nav-link"><i class="fas fa-wine-bottle"></i> Кормление</a></li>
+                <li><a href="#bathing" class="nav-link"><i class="fas fa-bath"></i> Купание</a></li>
+                <li><a href="#sleep" class="nav-link"><i class="fas fa-bed"></i> Сон</a></li>
+                <li><a href="#health" class="nav-link"><i class="fas fa-heartbeat"></i> Здоровье</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Главный контейнер -->
+    <main id="mainContent">
+        <!-- Главная страница -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Забота о вашем малыше</h1>
+                    <p class="subtitle">Подробные руководства с картинками для молодых родителей</p>
+                    <button class="cta-button" id="startGuide">Начать обучение</button>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-icons">
+                        <i class="fas fa-baby-carriage"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guides">
+                <h2>Основные руководства</h2>
+                <p class="section-description">Выберите тему для подробного изучения</p>
+                
+                <div class="guide-cards">
+                    <div class="card" data-target="feeding">
+                        <div class="card-icon"><i class="fas fa-wine-bottle"></i></div>
+                        <div class="card-content">
+                            <h3>Кормление малыша</h3>
+                            <p>Грудное вскармливание, искусственное питание, техники кормления</p>
+                            <button class="card-button">Подробнее <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-target="bathing">
+                        <div class="card-icon"><i class="fas fa-bath"></i></div>
+                        <div class="card-content">
+                            <h3>Купание и гигиена</h3>
+                            <p>Безопасное купание, уход за кожей, ежедневные процедуры</p>
+                            <button class="card-button">Подробнее <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-target="sleep">
+                        <div class="card-icon"><i class="fas fa-bed"></i></div>
+                        <div class="card-content">
+                            <h3>Сон малыша</h3>
+                            <p>Безопасный сон, режим дня, помощь при проблемах со сном</p>
+                            <button class="card-button">Подробнее <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-target="health">
+                        <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
+                        <div class="card-content">
+                            <h3>Здоровье и безопасность</h3>
+                            <p>Температура, прививки, признаки болезней, первая помощь</p>
+                            <button class="card-button">Подробнее <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tips">
+                <h2>Полезные советы на каждый день</h2>
+                <div class="tips-grid">
+                    <div class="tip-box">
+                        <div class="tip-number">01</div>
+                        <h4><i class="fas fa-temperature-low"></i> Комфортная температура</h4>
+                        <p>Поддерживайте в комнате 22-24°C. Одевайте малыша на один слой больше, чем себя.</p>
+                    </div>
+                    <div class="tip-box">
+                        <div class="tip-number">02</div>
+                        <h4><i class="fas fa-hand-holding-water"></i> Смена подгузника</h4>
+                        <p>Меняйте каждые 2-3 часа. Используйте крем под подгузник и влажные салфетки без спирта.</p>
+                    </div>
+                    <div class="tip-box">
+                        <div class="tip-number">03</div>
+                        <h4><i class="fas fa-volume-down"></i> Успокаивание плача</h4>
+                        <p>Проверьте: голод, мокрый подгузник, усталость. Помогает покачивание, шипящие звуки.</p>
+                    </div>
+                    <div class="tip-box">
+                        <div class="tip-number">04</div>
+                        <h4><i class="fas fa-baby-carriage"></i> Прогулки на свежем воздухе</h4>
+                        <p>Начинайте с 15 минут в день, постепенно увеличивая до 2 часов в хорошую погоду.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="emergency">
+                <div class="emergency-content">
+                    <div class="emergency-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="emergency-text">
+                        <h3>Экстренные телефоны</h3>
+                        <p>Скорая помощь: <strong>103</strong> | Детская неотложка: <strong>112</strong></p>
+                        <p class="warning"><i class="fas fa-exclamation-triangle"></i> Немедленно звоните врачу при температуре выше 38°C, затрудненном дыхании или отказе от еды.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Страница кормления -->
+        <section id="feeding" class="page">
+            <div class="page-header">
+                <h1><i class="fas fa-wine-bottle"></i> Кормление новорожденного</h1>
+                <p class="page-subtitle">Полное руководство с пошаговыми инструкциями</p>
+            </div>
+
+            <div class="content-grid">
+                <div class="main-content">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Правильные позы для кормления</h3>
+                            <div class="step-image">
+                                <div class="image-placeholder">
+                                    <i class="fas fa-baby"></i>
+                                    <p>Изображение: Позы для кормления</p>
+                                </div>
+                            </div>
+                            <div class="step-details">
+                                <h4>Основные позы:</h4>
+                                <ul>
+                                    <li><strong>Колыбелька:</strong> Ребенок лежит на руке, животиком к маме</li>
+                                    <li><strong>Перекрестная колыбелька:</strong> Контролируемая поза для недоношенных</li>
+                                    <li><strong>Из-под руки:</strong> После кесарева сечения</li>
+                                    <li><strong>Лежа на боку:</strong> Для ночных кормлений</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Техника прикладывания к груди</h3>
+                            <div class="step-image">
+                                <div class="image-placeholder">
+                                    <i class="fas fa-child"></i>
+                                    <p>Изображение: Техника прикладывания</p>
+                                </div>
+                            </div>
+                            <div class="step-details">
+                                <div class="instruction-checklist">
+                                    <div class="check-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Дождитесь, пока ребенок широко откроет рот</span>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Быстро поднесите ребенка к груди</span>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Сосок должен быть направлен к нёбу</span>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Подбородок прижат к груди, носик свободен</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Приготовление смеси</h3>
+                            <div class="step-image">
+                                <div class="image-placeholder">
+                                    <i class="fas fa-wine-bottle"></i>
+                                    <p>Изображение: Приготовление смеси</p>
+                                </div>
+                            </div>
+                            <div class="step-details">
+                                <div class="warning-box">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <h4>Важные правила:</h4>
+                                    <ul>
+                                        <li>Стерилизуйте бутылочки перед каждым использованием</li>
+                                        <li>Используйте кипяченую воду, остуженную до 40°C</li>
+                                        <li>Соблюдайте пропорции, указанные на упаковке</li>
+                                        <li>Тщательно размешивайте без образования комков</li>
+                                        <li>Проверяйте температуру на внутренней стороне запястья</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-lightbulb"></i> Быстрые советы</h3>
+                        <ul>
+                            <li>Признаки голода: сосание кулачка</li>
+                            <li>Признаки сытости: сам отпускает грудь</li>
+                            <li>Чередуйте груди при кормлении</li>
+                            <li>Не заставляйте доедать</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card warning">
+                        <h3><i class="fas fa-exclamation-circle"></i> Тревожные признаки</h3>
+                        <ul>
+                            <li>Меньше 6 мокрых подгузников в день</li>
+                            <li>Не набирает вес (менее 20г/день)</li>
+                            <li>Плачет после каждого кормления</li>
+                            <li>Желтуха не проходит через 2 недели</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-clock"></i> Режим кормления</h3>
+                        <p><strong>0-1 месяц:</strong> 8-12 раз в сутки</p>
+                        <p><strong>1-3 месяца:</strong> 7-9 раз в сутки</p>
+                        <p><strong>3-6 месяцев:</strong> 6-7 раз в сутки</p>
+                    </div>
+
+                    <button class="back-button" onclick="showPage('home')">
+                        <i class="fas fa-arrow-left"></i> На главную
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Страница купания -->
+        <section id="bathing" class="page">
+            <div class="page-header">
+                <h1><i class="fas fa-bath"></i> Купание новорожденного</h1>
+                <p class="page-subtitle">Безопасное купание и ежедневная гигиена</p>
+            </div>
+
+            <div class="content-grid">
+                <div class="main-content">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Подготовка к купанию</h3>
+                            <div class="step-image">
+                                <div class="image-placeholder">
+                                    <i class="fas fa-bath"></i>
+                                    <p>Изображение: Подготовка к купанию</p>
+                                </div>
+                            </div>
+                            <div class="step-details">
+                                <h4>Что подготовить:</h4>
+                                <ul>
+                                    <li>Детская ванночка с горкой или гамаком</li>
+                                    <li>Термометр для воды</li>
+                                    <li>Детское мыло/гель для купания</li>
+                                    <li>Мягкое полотенце с капюшоном</li>
+                                    <li>Чистая одежда и подгузник</li>
+                                    <li>Средства для ухода после купания</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Температура воды и воздуха</h3>
+                            <div class="step-image">
+                                <div class="image-placeholder">
+                                    <i class="fas fa-thermometer-half"></i>
+                                    <p>Изображение: Температура воды</p>
+                                </div>
+                            </div>
+                            <div class="step-details">
+                                <div class="temperature-guide">
+                                    <div class="temp-item">
+                                        <div class="temp-value">36-37°C</div>
+                                        <div class="temp-label">Идеальная температура воды</div>
+                                    </div>
+                                    <div class="temp-item">
+                                        <div class="temp-value">24-26°C</div>
+                                        <div class="temp-label">Температура в ванной комнате</div>
+                                    </div>
+                                    <div class="temp-item">
+                                        <div class="temp-value">5-7 мин</div>
+                                        <div class="temp-label">Длительность первого купания</div>
+                                    </div>
+                                </div>
+                                <p class="tip-text"><i class="fas fa-lightbulb"></i> Проверяйте температуру локтем или термометром</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Техника купания</h3>
+                            <div class="step-image">
+                                <div class="image-placeholder">
+                                    <i class="fas fa-hands-helping"></i>
+                                    <p>Изображение: Техника купания</p>
+                                </div>
+                            </div>
+                            <div class="step-details">
+                                <div class="instruction-steps">
+                                    <div class="instruction-step">
+                                        <span class="step-icon">①</span>
+                                        <p>Начните с умывания лица ватными дисками</p>
+                                    </div>
+                                    <div class="instruction-step">
+                                        <span class="step-icon">②</span>
+                                        <p>Аккуратно намыльте волосики и смойте</p>
+                                    </div>
+                                    <div class="instruction-step">
+                                        <span class="step-icon">③</span>
+                                        <p>Вымойте тело сверху вниз, уделяя внимание складкам</p>
+                                    </div>
+                                    <div class="instruction-step">
+                                        <span class="step-icon">④</span>
+                                        <p>В последнюю очередь помойте область подгузника</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-calendar-alt"></i> Частота купания</h3>
+                        <ul>
+                            <li><strong>Первые 2 недели:</strong> Обтирание влажными салфетками</li>
+                            <li><strong>После заживления пупка:</strong> Купание 2-3 раза в неделю</li>
+                            <li><strong>Ежедневно:</strong> Умывание, подмывание, обработка складок</li>
+                            <li><strong>В жаркое время:</strong> Можно купать ежедневно</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card warning">
+                        <h3><i class="fas fa-ban"></i> Чего избегать</h3>
+                        <ul>
+                            <li>Не оставлять ребенка одного в воде</li>
+                            <li>Не использовать взрослые средства</li>
+                            <li>Не
